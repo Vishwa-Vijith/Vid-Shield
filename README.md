@@ -16,8 +16,20 @@ VidShield is a privacy-first, productivity-boosting Chrome extension that dynami
 
 ## 📂 Project Structure
 
-├── public/ ├── src/ │ ├── content-scripts/ │ │ └── pages/ │ │ └── commons/ │ ├── service-worker/ │ │ ├── ml-model/ │ │ └── cleanupExpiredRules.js │ └── db/ ├── dist/ # Output folder (Git ignored) ├── webpack.config.js ├── manifest.json ├── package.json └── .gitignore
-
+├── public/ 
+├── src/ │ 
+├── content-scripts/ 
+│ │ └── pages/ 
+│ │ └── commons/ 
+│ ├── service-worker/ 
+│ │ ├── ml-model/ 
+│ │ └── cleanupExpiredRules.js 
+│ └── db/ 
+├── dist/ # Output folder (Git ignored) 
+├── webpack.config.js 
+├── manifest.json 
+├── package.json 
+└── .gitignore
 
 ---
 
@@ -29,53 +41,51 @@ VidShield is a privacy-first, productivity-boosting Chrome extension that dynami
    cd vidshield-extension
 
 2. **Install dependencies**:
-  ```bash
-  npm install
+   ```bash
+   npm install
+
 3. **Build the extension**:
-  ```bash
-  npm run build
+   ```bash
+   npm run build
+   
 4. **Load the extension into Chrome**:
- - Go to chrome://extensions
- - Enable Developer Mode
- - Click Load unpacked
- - Select the dist/ folder
+  - Go to chrome://extensions
+  - Enable Developer Mode
+  - Click Load unpacked
+  - Select the dist/ folder
 
 ---
 
 ## 🧠 Machine Learning Model
 The extension uses a small TensorFlow.js model trained to classify YouTube videos as productive or non-productive based on metadata (title, description, etc.).
-
-- Trained in Colab
-- Stored as model.json inside service-worker/ml-model/
+   - Trained in Colab
+   - Stored as model.json inside service-worker/ml-model/
 
 ## 📦 Tech Stack
-- JavaScript (ES6+)
+   - JavaScript (ES6+)
+   - Webpack (modular build setup)
+   - IndexedDB
+   - Chrome DeclarativeNetRequest API
+   - TF-IDF and Naive Bayes ML classifier
+   - Chrome Extension MV3
 
-- Webpack (modular build setup)
-
-- IndexedDB
-
-- Chrome DeclarativeNetRequest API
-- Naive Bayes
-
-- Chrome Extension MV3
+---
 
 ## 🤝 Contribution
 Contributions are welcome! 🚀
-
-- Fork this repo
-
-- Create a new branch (feat/your-feature)
-
-- Make your changes and commit
-
-- Push your branch and open a Pull Request
-
+   - Fork this repo
+   - Create a new branch (feat/your-feature)
+   - Make your changes and commit
+   - Push your branch and open a Pull Request
 Please make sure your code follows the existing style and structure.
+
+---
 
 ## 🪪 License
 This project is licensed under the MIT License.
 See the LICENSE file for more details.
+
+---
 
 ## ✨ Author
 👤 Vishwa Vijith
