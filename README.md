@@ -1,5 +1,13 @@
 # 📹 VidShield – A YouTube Content Filtering Chrome Extension
 
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TensorFlow.js](https://img.shields.io/badge/TensorFlow.js-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![Chrome Extension](https://img.shields.io/badge/Chrome%20Extension-MV3-4285F4?style=flat&logo=google-chrome&logoColor=white)
+![Manifest V3](https://img.shields.io/badge/Manifest-V3-5F6368?style=flat&logo=google-chrome&logoColor=white)
+![IndexedDB](https://img.shields.io/badge/IndexedDB-4479A1?style=flat&logo=database&logoColor=white)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=flat&logo=webpack&logoColor=black)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat)
+
 VidShield is a privacy-first, productivity-boosting Chrome extension that dynamically **blocks non-productive YouTube videos** using a custom ML model. It filters out distractions based on metadata like title, description, and video ID — all in real-time using declarative network request rules.
 
 ## 📛 Why the Name "VidShield"?
@@ -90,6 +98,8 @@ Please make sure your code follows the existing style and structure.
 ---
 
 ## 🪪 License
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat)
+
 This project is licensed under the MIT License.
 See the LICENSE file for more details.
 
