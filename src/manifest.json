@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Vid Shield",
+  "version": "1.0",
+  "description": "Blocks non-productive YouTube content",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "webNavigation",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "Block unwanted"
+  },
+  "host_permissions": ["*://*.youtube.com/*"],
+  "background": {
+    "service_worker": "service-worker/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content-scripts/content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["service-worker/ml-model/model.json", "popup/index.html"],
+      "matches": ["*://www.youtube.com/*"]
+    }
+  ]
+}
