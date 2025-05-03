@@ -29,6 +29,18 @@ The goal is to empower users to take control of their video consumption, making 
 
 ---
 
+## 📸 Project Screenshots
+
+Here are some visuals of VidShield in action:
+
+### 🔍 Sample Non-Production YouTube Video
+![YouTube Home Page](assets/vid-shield-non-prod.png)
+
+### 🚫 Blocked Video Popup
+![Blocked Video](assets/vid-shield-blocked.png)
+
+---
+
 ## 📂 Project Structure
 ```
 ├── public/ 
